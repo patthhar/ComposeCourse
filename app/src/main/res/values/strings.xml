@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ComposeCourse</string>
+    <string name="follow_button">Follow %s</string>
+    <string name="message">Message</string>
+</resources>
