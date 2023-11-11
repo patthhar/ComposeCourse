@@ -8,8 +8,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import me.darthwithap.android.composecourse.ui.theme.ComposeCourseTheme
-import me.darthwithap.android.composecourse.week_1.ProfileScreenConstraintLayout
-import me.darthwithap.android.composecourse.week_1.UserProfile
+import me.darthwithap.android.composecourse.week_3.Effects
+import me.darthwithap.android.composecourse.week_3.EffectsViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,9 +20,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ProfileScreenConstraintLayout(
-                        modifier = Modifier,
-                        userProfile = UserProfile.fakeProfile
+//                    ProfileScreenConstraintLayout(
+//                        modifier = Modifier,
+//                        userProfile = UserProfile.fakeProfile
+//                    )
+                    Effects(
+                        viewModel = EffectsViewModel()
                     )
                 }
             }
